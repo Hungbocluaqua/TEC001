@@ -22,21 +22,24 @@ print("Product: ", x*y*z)
 print("Average: ", f"{(x+y+z)/3: .2f} \n")
 
 #Quy đổi từ talents, pounds, lots sang kilogram
-talents = input("Enter numbers of talents: ")
-pounds = input("Enter numbers of pounds: ")
-lots = input("Enter numbers of lots: ")
-if talents:
-    print("Kilograms from talents: ", f"{float(talents)*8.512: .2f}")
-else:
-    print("You didn't enter any talents.")
-if pounds:
-    print("Kilograms from pounds: ", f"{float(pounds)*0.4256: .2f}")
-else:
-    print("You didn't enter any pounds.")
-if lots:
-    print("Kilograms from lots : ", f"{float(lots)*0.0133: .2f}")
-else:
-    print("You didn't enter any lots.")
+try:
+    talents = input("Enter numbers of talents: ")
+    pounds = input("Enter numbers of pounds: ")
+    lots = input("Enter numbers of lots: ")
+    if talents:
+        print("Kilograms from talents: ", f"{float(talents)*8.512: .2f}")
+    else:
+        print("You didn't enter any talents.")
+    if pounds:
+        print("Kilograms from pounds: ", f"{float(pounds)*0.4256: .2f}")
+    else:
+        print("You didn't enter any pounds.")
+    if lots:
+        print("Kilograms from lots : ", f"{float(lots)*0.0133: .2f}")
+    else:
+        print("You didn't enter any lots.")
+except:
+    print("please enter a valid number")
 
 #Tạo dãy số cho ổ khóa 3 chữ số và 4 chữ số
 print("\n3 digit lock combination: ", random.randint(0,9),random.randint(0,9),random.randint(0,9) )
