@@ -1,4 +1,5 @@
 ﻿import math
+import random
 #Nhập tên và in lời chào
 print("HELLOOOOOOOO ", f"{input("Enter your name: ")} \n")
 
@@ -36,3 +37,7 @@ if lots:
     print("Kilograms from lots : ", f"{float(lots)*0.0133: .2f}")
 else:
     print("You didn't enter any lots.")
+
+#Tạo dãy số cho ổ khóa 3 chữ số và 4 chữ số
+print("\n3 digit lock combination: ", random.randint(0,9),random.randint(0,9),random.randint(0,9) )
+print("4 digit lock combination: ", random.randint(0,9),random.randint(0,9),random.randint(0,9),random.randint(0,9) )
